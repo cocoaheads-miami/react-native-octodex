@@ -2,8 +2,6 @@
 
 ![alt Octodex](https://raw.githubusercontent.com/cocoaheads-miami/react-native-octodex/master/screenshot.png)
 
-React Native demo
-
 Part of the _React Native for iOS_ presentation at CocoaHeads Miami.
 
 ## Usage
