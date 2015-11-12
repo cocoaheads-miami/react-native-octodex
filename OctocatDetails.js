@@ -16,11 +16,11 @@ class OctocatDetails extends React.Component {
             <View style={styles.container}>
                 <Image source={{uri: this.props.octocat.url}}
                        style={styles.image} />
-                <Text style={styles.welcome}>
+                <Text style={styles.name}>
                     {this.props.octocat.name}
                 </Text>
-                <Text style={styles.welcome}>
-                    {this.props.octocat.author}
+                <Text style={styles.author} numberOfLines={1}>
+                    by {this.props.octocat.author}
                 </Text>
             </View>
         );
@@ -38,42 +38,14 @@ var styles = StyleSheet.create({
         width: 400,
         height: 400
     },
-    spinner: {
-        width: 64,
-        height: 64
-    },
-    thumbNail: {
-        width: 100,
-        height: 100
-    },
-    listView: {
-        paddingTop: 80,
-        backgroundColor: '#F5FCFF'
-    },
-    thumb: {
-        width: 80,
-        height: 80,
-        marginRight: 10
-    },
-    textContainer: {
-        flex: 1
-    },
-    separator: {
-        height: 1,
-        backgroundColor: '#dddddd'
-    },
-    price: {
+    name: {
         fontSize: 25,
         fontWeight: 'bold',
         color: '#48BBEC'
     },
-    title: {
+    author: {
         fontSize: 20,
         color: '#656565'
-    },
-    rowContainer: {
-        flexDirection: 'row',
-        padding: 10
     }
 });
 
